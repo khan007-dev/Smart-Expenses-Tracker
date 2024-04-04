@@ -6,3 +6,6 @@
 //
 
 import Foundation
+import SwiftUI
+
+let appTint: Color = .red
