@@ -7,12 +7,19 @@
 
 import SwiftUI
 
-struct DateExtension: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
 
-#Preview {
-    DateExtension()
+extension Date {
+    
+    var startOfMonth: Date {
+        
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.year, .month], from: self)
+        
+        return calendar.date(from: components) ?? self
+        
+    }
+    
+//    var endOfMonth: Date {
+//
+//    }
 }

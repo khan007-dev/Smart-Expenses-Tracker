@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9A488912BC0AFBA002D5980 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A488902BC0AFB9002D5980 /* Category.swift */; };
+		C9A488952BC0B047002D5980 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A488942BC0B047002D5980 /* Transaction.swift */; };
+		C9A488982BC0B0D7002D5980 /* TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A488972BC0B0D7002D5980 /* TintColor.swift */; };
+		C9A4889B2BC0B3F6002D5980 /* Recents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A4889A2BC0B3F6002D5980 /* Recents.swift */; };
+		C9A4889D2BC0B411002D5980 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A4889C2BC0B411002D5980 /* Search.swift */; };
+		C9A4889F2BC0B41B002D5980 /* Graphs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A4889E2BC0B41B002D5980 /* Graphs.swift */; };
+		C9A488A12BC0B426002D5980 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A488A02BC0B426002D5980 /* Settings.swift */; };
+		C9A488A32BC0B620002D5980 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A488A22BC0B620002D5980 /* Utils.swift */; };
+		C9A488A52BC0BCBA002D5980 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A488A42BC0BCBA002D5980 /* DateExtension.swift */; };
 		C9F4F3BF2BBF531D00239788 /* Smart_Expenses_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F4F3BE2BBF531D00239788 /* Smart_Expenses_TrackerApp.swift */; };
 		C9F4F3C12BBF531D00239788 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F4F3C02BBF531D00239788 /* ContentView.swift */; };
 		C9F4F3C32BBF531F00239788 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9F4F3C22BBF531F00239788 /* Assets.xcassets */; };
@@ -17,6 +26,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C9A488902BC0AFB9002D5980 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		C9A488942BC0B047002D5980 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		C9A488972BC0B0D7002D5980 /* TintColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TintColor.swift; sourceTree = "<group>"; };
+		C9A4889A2BC0B3F6002D5980 /* Recents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recents.swift; sourceTree = "<group>"; };
+		C9A4889C2BC0B411002D5980 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		C9A4889E2BC0B41B002D5980 /* Graphs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graphs.swift; sourceTree = "<group>"; };
+		C9A488A02BC0B426002D5980 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		C9A488A22BC0B620002D5980 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		C9A488A42BC0BCBA002D5980 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		C9F4F3BB2BBF531D00239788 /* Smart Expenses Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Expenses Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9F4F3BE2BBF531D00239788 /* Smart_Expenses_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_Expenses_TrackerApp.swift; sourceTree = "<group>"; };
 		C9F4F3C02BBF531D00239788 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +56,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C9A488992BC0B3E3002D5980 /* TabViews */ = {
+			isa = PBXGroup;
+			children = (
+				C9A4889A2BC0B3F6002D5980 /* Recents.swift */,
+				C9A4889C2BC0B411002D5980 /* Search.swift */,
+				C9A4889E2BC0B41B002D5980 /* Graphs.swift */,
+				C9A488A02BC0B426002D5980 /* Settings.swift */,
+			);
+			path = TabViews;
+			sourceTree = "<group>";
+		};
 		C9F4F3B22BBF531D00239788 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +108,7 @@
 		C9F4F3CC2BBF539B00239788 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C9A488992BC0B3E3002D5980 /* TabViews */,
 				C9F4F3CF2BBF53C700239788 /* IntroScreen.swift */,
 			);
 			path = View;
@@ -88,6 +118,9 @@
 			isa = PBXGroup;
 			children = (
 				C9F4F3D42BBF573A00239788 /* Tab.swift */,
+				C9A488902BC0AFB9002D5980 /* Category.swift */,
+				C9A488942BC0B047002D5980 /* Transaction.swift */,
+				C9A488972BC0B0D7002D5980 /* TintColor.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -96,6 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				C9F4F3D22BBF554C00239788 /* Constants.swift */,
+				C9A488A22BC0B620002D5980 /* Utils.swift */,
+				C9A488A42BC0BCBA002D5980 /* DateExtension.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -170,11 +205,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9A488982BC0B0D7002D5980 /* TintColor.swift in Sources */,
+				C9A488A52BC0BCBA002D5980 /* DateExtension.swift in Sources */,
+				C9A4889B2BC0B3F6002D5980 /* Recents.swift in Sources */,
+				C9A488952BC0B047002D5980 /* Transaction.swift in Sources */,
 				C9F4F3C12BBF531D00239788 /* ContentView.swift in Sources */,
 				C9F4F3D02BBF53C700239788 /* IntroScreen.swift in Sources */,
+				C9A488A32BC0B620002D5980 /* Utils.swift in Sources */,
 				C9F4F3D52BBF573A00239788 /* Tab.swift in Sources */,
+				C9A488A12BC0B426002D5980 /* Settings.swift in Sources */,
 				C9F4F3BF2BBF531D00239788 /* Smart_Expenses_TrackerApp.swift in Sources */,
+				C9A4889D2BC0B411002D5980 /* Search.swift in Sources */,
 				C9F4F3D32BBF554C00239788 /* Constants.swift in Sources */,
+				C9A4889F2BC0B41B002D5980 /* Graphs.swift in Sources */,
+				C9A488912BC0AFBA002D5980 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

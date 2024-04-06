@@ -18,19 +18,19 @@ struct ContentView: View {
         
         TabView (selection: $activeTab) {
             
-            Text("Recents")
+            Recents()
                 .tag(Tab.recents)
                 .tabItem { Tab.recents.tabContent }
             
-            Text("Search")
+            Search()
                 .tag(Tab.recents)
                 .tabItem { Tab.search.tabContent }
             
-            Text("Chart")
+            Graphs()
                 .tag(Tab.recents)
                 .tabItem { Tab.charts.tabContent }
             
-            Text("Settings")
+            Settings()
                 .tag(Tab.recents)
                 .tabItem { Tab.settings.tabContent }
         }
