@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C94092192BC2837F001F4E10 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94092182BC2837F001F4E10 /* CardView.swift */; };
 		C9A488912BC0AFBA002D5980 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A488902BC0AFB9002D5980 /* Category.swift */; };
 		C9A488952BC0B047002D5980 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A488942BC0B047002D5980 /* Transaction.swift */; };
 		C9A488982BC0B0D7002D5980 /* TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A488972BC0B0D7002D5980 /* TintColor.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C94092182BC2837F001F4E10 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		C9A488902BC0AFB9002D5980 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		C9A488942BC0B047002D5980 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		C9A488972BC0B0D7002D5980 /* TintColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TintColor.swift; sourceTree = "<group>"; };
@@ -56,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C94092172BC28371001F4E10 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C94092182BC2837F001F4E10 /* CardView.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		C9A488992BC0B3E3002D5980 /* TabViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +118,7 @@
 		C9F4F3CC2BBF539B00239788 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C94092172BC28371001F4E10 /* Helper */,
 				C9A488992BC0B3E3002D5980 /* TabViews */,
 				C9F4F3CF2BBF53C700239788 /* IntroScreen.swift */,
 			);
@@ -209,6 +220,7 @@
 				C9A488A52BC0BCBA002D5980 /* DateExtension.swift in Sources */,
 				C9A4889B2BC0B3F6002D5980 /* Recents.swift in Sources */,
 				C9A488952BC0B047002D5980 /* Transaction.swift in Sources */,
+				C94092192BC2837F001F4E10 /* CardView.swift in Sources */,
 				C9F4F3C12BBF531D00239788 /* ContentView.swift in Sources */,
 				C9F4F3D02BBF53C700239788 /* IntroScreen.swift in Sources */,
 				C9A488A32BC0B620002D5980 /* Utils.swift in Sources */,

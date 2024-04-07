@@ -8,11 +8,23 @@
 import SwiftUI
 
 struct CardView: View {
+    var income: Double
+    var expense: Double
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+       
+        ZStack {
+            RoundedRectangle(cornerRadius: 15)
+                .fill(.background)
+            
+            VStack(spacing: 0) {
+                HStack(spacing: 12){
+                    Text("")
+                }
+            }
+        }
     }
 }
 
 #Preview {
-    CardView()
+    CardView(income: 4590, expense: 2389)
 }

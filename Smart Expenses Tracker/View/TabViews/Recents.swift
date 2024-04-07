@@ -9,6 +9,9 @@ import SwiftUI
 
 struct Recents: View {
     @AppStorage("userName") private var userName: String = ""
+    
+    @State private var startDate: Date = .now.startOfMonth
+    @State private var endDate: Date = .now.endOfMonth
     var body: some View {
         GeometryReader {
             
@@ -23,8 +26,11 @@ struct Recents: View {
                             Button {
                                 
                             } label: {
-                                Text("")
-                            }
+                                
+                                Text("\(format(date: startDate, format: "dd - MM yy")) to \(format(date: endDate, format: "dd - MM yy"))").font(.caption2).foregroundStyle(.gray)
+                            
+                                     
+                            }.hSpacing(.leading)
                             
                             
                         } header: {
