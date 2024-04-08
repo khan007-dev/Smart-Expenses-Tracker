@@ -31,4 +31,11 @@ extension  View {
         formatter.dateFormat = format
         return formatter.string(from: date)
     }
+    
+    func currencyString (_ value: Double, allowedDigtis: Int = 2) -> String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.maximumFractionDigits = allowedDigtis
+        return formatter.string(from: .init(value: value)) ?? ""
+    }
 }

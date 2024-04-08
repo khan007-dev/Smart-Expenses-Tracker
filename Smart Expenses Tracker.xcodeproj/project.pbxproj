@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C94092192BC2837F001F4E10 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94092182BC2837F001F4E10 /* CardView.swift */; };
+		C940921B2BC3E4A1001F4E10 /* TransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C940921A2BC3E4A1001F4E10 /* TransactionCardView.swift */; };
+		C940921D2BC3E9B9001F4E10 /* SwipeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C940921C2BC3E9B9001F4E10 /* SwipeAction.swift */; };
+		C940921F2BC3EC47001F4E10 /* DataFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C940921E2BC3EC47001F4E10 /* DataFilterView.swift */; };
 		C9A488912BC0AFBA002D5980 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A488902BC0AFB9002D5980 /* Category.swift */; };
 		C9A488952BC0B047002D5980 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A488942BC0B047002D5980 /* Transaction.swift */; };
 		C9A488982BC0B0D7002D5980 /* TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A488972BC0B0D7002D5980 /* TintColor.swift */; };
@@ -28,6 +31,9 @@
 
 /* Begin PBXFileReference section */
 		C94092182BC2837F001F4E10 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		C940921A2BC3E4A1001F4E10 /* TransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCardView.swift; sourceTree = "<group>"; };
+		C940921C2BC3E9B9001F4E10 /* SwipeAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeAction.swift; sourceTree = "<group>"; };
+		C940921E2BC3EC47001F4E10 /* DataFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFilterView.swift; sourceTree = "<group>"; };
 		C9A488902BC0AFB9002D5980 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		C9A488942BC0B047002D5980 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		C9A488972BC0B0D7002D5980 /* TintColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TintColor.swift; sourceTree = "<group>"; };
@@ -61,7 +67,10 @@
 		C94092172BC28371001F4E10 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				C940921C2BC3E9B9001F4E10 /* SwipeAction.swift */,
 				C94092182BC2837F001F4E10 /* CardView.swift */,
+				C940921A2BC3E4A1001F4E10 /* TransactionCardView.swift */,
+				C940921E2BC3EC47001F4E10 /* DataFilterView.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -218,9 +227,11 @@
 			files = (
 				C9A488982BC0B0D7002D5980 /* TintColor.swift in Sources */,
 				C9A488A52BC0BCBA002D5980 /* DateExtension.swift in Sources */,
+				C940921F2BC3EC47001F4E10 /* DataFilterView.swift in Sources */,
 				C9A4889B2BC0B3F6002D5980 /* Recents.swift in Sources */,
 				C9A488952BC0B047002D5980 /* Transaction.swift in Sources */,
 				C94092192BC2837F001F4E10 /* CardView.swift in Sources */,
+				C940921D2BC3E9B9001F4E10 /* SwipeAction.swift in Sources */,
 				C9F4F3C12BBF531D00239788 /* ContentView.swift in Sources */,
 				C9F4F3D02BBF53C700239788 /* IntroScreen.swift in Sources */,
 				C9A488A32BC0B620002D5980 /* Utils.swift in Sources */,
@@ -231,6 +242,7 @@
 				C9F4F3D32BBF554C00239788 /* Constants.swift in Sources */,
 				C9A4889F2BC0B41B002D5980 /* Graphs.swift in Sources */,
 				C9A488912BC0AFBA002D5980 /* Category.swift in Sources */,
+				C940921B2BC3E4A1001F4E10 /* TransactionCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
