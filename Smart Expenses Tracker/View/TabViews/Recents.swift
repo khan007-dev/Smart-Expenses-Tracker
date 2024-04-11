@@ -47,10 +47,7 @@ struct Recents: View {
                             CustomSegmentedControl()
                                 .padding(.bottom,10)
                             
-                            ForEach(sampleTransactions.filter({ $0.category == selectedCategory.rawValue })) { transaction in
-                            
-                                TransactionCardView(transaction: transaction)
-                            }
+//                           TransactionCardView(transaction: transaction)
                             
                         } header: {
                             HeaderView(size)
@@ -97,6 +94,8 @@ struct Recents: View {
             
             Spacer(minLength: 0)
             NavigationLink {
+                
+                NewExpenseView()
                 
             } label: {
                 Image(systemName: "plus")

@@ -13,5 +13,6 @@ struct Smart_Expenses_TrackerApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: [Transaction.self])
     }
 }

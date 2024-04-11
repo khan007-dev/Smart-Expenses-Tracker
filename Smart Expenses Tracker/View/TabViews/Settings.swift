@@ -14,8 +14,8 @@ struct Settings: View {
     
     /// App Lock Properties
     
-    @AppStorage("isApLockEnabled") private var isAppLockEnabled: Bool = false
-    @AppStorage("lockWhenAppGoesBackground") private var lockWhenAppGoesBackground: Bool = false
+    @AppStorage("isApLockEnabled") private var isAppLockEnabled: Bool = true
+    @AppStorage("lockWhenAppGoesBackground") private var lockWhenAppGoesBackground: Bool = true
     var body: some View {
         
         NavigationStack {
