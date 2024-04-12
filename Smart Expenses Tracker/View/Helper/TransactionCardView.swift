@@ -20,7 +20,6 @@ struct TransactionCardView: View {
                     .fontWeight(.semibold)
                     .foregroundStyle(.white)
                     .frame(width: 45, height: 45)
-//                  .background(transaction.color.gradient, in: .circle)
                 
                 VStack(alignment: .leading, spacing: 4, content: {
                     Text(transaction.title)
@@ -45,9 +44,8 @@ struct TransactionCardView: View {
                 })
                 .lineLimit(1)
                 .hSpacing(.leading)
-//         
-//                Text(currencyString(transaction.amount, allowedDigits: 2))
-//                    .fontWeight(.semibold)
+                Text(currencyString(transaction.amount, allowedDigtis: 2))
+                    .fontWeight(.semibold)
             }
             .padding(.horizontal, 15)
             .padding(.vertical, 10)

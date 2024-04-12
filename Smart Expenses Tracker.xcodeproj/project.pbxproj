@@ -13,6 +13,22 @@
 		C940921F2BC3EC47001F4E10 /* DataFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C940921E2BC3EC47001F4E10 /* DataFilterView.swift */; };
 		C94092552BC44ECA001F4E10 /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94092542BC44EC9001F4E10 /* LockView.swift */; };
 		C94092CD2BC7B6CD001F4E10 /* NewExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94092CC2BC7B6CD001F4E10 /* NewExpenseView.swift */; };
+		C94095602BC9DFFF001F4E10 /* FilterTransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C940955F2BC9DFFF001F4E10 /* FilterTransactionsView.swift */; };
+		C94095622BC9E5A3001F4E10 /* ChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94095612BC9E5A3001F4E10 /* ChartModel.swift */; };
+		C940956A2BC9E739001F4E10 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94095692BC9E739001F4E10 /* WidgetKit.framework */; };
+		C940956C2BC9E739001F4E10 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C940956B2BC9E739001F4E10 /* SwiftUI.framework */; };
+		C94095712BC9E739001F4E10 /* StateCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94095702BC9E739001F4E10 /* StateCardView.swift */; };
+		C94095732BC9E73B001F4E10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C94095722BC9E73B001F4E10 /* Assets.xcassets */; };
+		C94095772BC9E73B001F4E10 /* StateCardViewExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C94095672BC9E739001F4E10 /* StateCardViewExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C940957C2BC9E81E001F4E10 /* FilterTransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C940955F2BC9DFFF001F4E10 /* FilterTransactionsView.swift */; };
+		C940957D2BC9E866001F4E10 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A488A42BC0BCBA002D5980 /* DateExtension.swift */; };
+		C940957E2BC9E871001F4E10 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A488A22BC0B620002D5980 /* Utils.swift */; };
+		C940957F2BC9E88C001F4E10 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94092182BC2837F001F4E10 /* CardView.swift */; };
+		C94095802BC9E8AC001F4E10 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A488942BC0B047002D5980 /* Transaction.swift */; };
+		C94095812BC9E960001F4E10 /* TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A488972BC0B0D7002D5980 /* TintColor.swift */; };
+		C94095822BC9E98F001F4E10 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F4F3D22BBF554C00239788 /* Constants.swift */; };
+		C94095862BC9EB0D001F4E10 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A488902BC0AFB9002D5980 /* Category.swift */; };
+		C94095892BC9EBA2001F4E10 /* StatsCardViewBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94095882BC9EBA2001F4E10 /* StatsCardViewBundle.swift */; };
 		C9A488912BC0AFBA002D5980 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A488902BC0AFB9002D5980 /* Category.swift */; };
 		C9A488952BC0B047002D5980 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A488942BC0B047002D5980 /* Transaction.swift */; };
 		C9A488982BC0B0D7002D5980 /* TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A488972BC0B0D7002D5980 /* TintColor.swift */; };
@@ -31,6 +47,30 @@
 		C9F4F3D52BBF573A00239788 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F4F3D42BBF573A00239788 /* Tab.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C94095752BC9E73B001F4E10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9F4F3B32BBF531D00239788 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C94095662BC9E739001F4E10;
+			remoteInfo = StateCardViewExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C940957B2BC9E73B001F4E10 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C94095772BC9E73B001F4E10 /* StateCardViewExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		C94092182BC2837F001F4E10 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		C940921A2BC3E4A1001F4E10 /* TransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCardView.swift; sourceTree = "<group>"; };
@@ -38,6 +78,16 @@
 		C940921E2BC3EC47001F4E10 /* DataFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFilterView.swift; sourceTree = "<group>"; };
 		C94092542BC44EC9001F4E10 /* LockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
 		C94092CC2BC7B6CD001F4E10 /* NewExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewExpenseView.swift; sourceTree = "<group>"; };
+		C940955F2BC9DFFF001F4E10 /* FilterTransactionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterTransactionsView.swift; sourceTree = "<group>"; };
+		C94095612BC9E5A3001F4E10 /* ChartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartModel.swift; sourceTree = "<group>"; };
+		C94095672BC9E739001F4E10 /* StateCardViewExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StateCardViewExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C94095692BC9E739001F4E10 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		C940956B2BC9E739001F4E10 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		C94095702BC9E739001F4E10 /* StateCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateCardView.swift; sourceTree = "<group>"; };
+		C94095722BC9E73B001F4E10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C94095742BC9E73B001F4E10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C94095882BC9EBA2001F4E10 /* StatsCardViewBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsCardViewBundle.swift; sourceTree = "<group>"; };
+		C940958C2BC9EC97001F4E10 /* Smart Expenses Tracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Smart Expenses Tracker.entitlements"; sourceTree = "<group>"; };
 		C9A488902BC0AFB9002D5980 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		C9A488942BC0B047002D5980 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		C9A488972BC0B0D7002D5980 /* TintColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TintColor.swift; sourceTree = "<group>"; };
@@ -58,6 +108,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C94095642BC9E739001F4E10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C940956C2BC9E739001F4E10 /* SwiftUI.framework in Frameworks */,
+				C940956A2BC9E739001F4E10 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C9F4F3B82BBF531D00239788 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -76,8 +135,29 @@
 				C94092182BC2837F001F4E10 /* CardView.swift */,
 				C940921A2BC3E4A1001F4E10 /* TransactionCardView.swift */,
 				C940921E2BC3EC47001F4E10 /* DataFilterView.swift */,
+				C940955F2BC9DFFF001F4E10 /* FilterTransactionsView.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		C94095682BC9E739001F4E10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C94095692BC9E739001F4E10 /* WidgetKit.framework */,
+				C940956B2BC9E739001F4E10 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C940956D2BC9E739001F4E10 /* StateCardView */ = {
+			isa = PBXGroup;
+			children = (
+				C94095882BC9EBA2001F4E10 /* StatsCardViewBundle.swift */,
+				C94095702BC9E739001F4E10 /* StateCardView.swift */,
+				C94095722BC9E73B001F4E10 /* Assets.xcassets */,
+				C94095742BC9E73B001F4E10 /* Info.plist */,
+			);
+			path = StateCardView;
 			sourceTree = "<group>";
 		};
 		C9A488992BC0B3E3002D5980 /* TabViews */ = {
@@ -95,6 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				C9F4F3BD2BBF531D00239788 /* Smart Expenses Tracker */,
+				C940956D2BC9E739001F4E10 /* StateCardView */,
+				C94095682BC9E739001F4E10 /* Frameworks */,
 				C9F4F3BC2BBF531D00239788 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				C9F4F3BB2BBF531D00239788 /* Smart Expenses Tracker.app */,
+				C94095672BC9E739001F4E10 /* StateCardViewExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,6 +193,7 @@
 		C9F4F3BD2BBF531D00239788 /* Smart Expenses Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				C940958C2BC9EC97001F4E10 /* Smart Expenses Tracker.entitlements */,
 				C9F4F3D12BBF553D00239788 /* Helper */,
 				C9F4F3CD2BBF53A100239788 /* Model */,
 				C9F4F3CC2BBF539B00239788 /* View */,
@@ -147,6 +231,7 @@
 				C9A488902BC0AFB9002D5980 /* Category.swift */,
 				C9A488942BC0B047002D5980 /* Transaction.swift */,
 				C9A488972BC0B0D7002D5980 /* TintColor.swift */,
+				C94095612BC9E5A3001F4E10 /* ChartModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,6 +249,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C94095662BC9E739001F4E10 /* StateCardViewExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C94095782BC9E73B001F4E10 /* Build configuration list for PBXNativeTarget "StateCardViewExtension" */;
+			buildPhases = (
+				C94095632BC9E739001F4E10 /* Sources */,
+				C94095642BC9E739001F4E10 /* Frameworks */,
+				C94095652BC9E739001F4E10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StateCardViewExtension;
+			productName = StateCardViewExtension;
+			productReference = C94095672BC9E739001F4E10 /* StateCardViewExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		C9F4F3BA2BBF531D00239788 /* Smart Expenses Tracker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9F4F3C92BBF531F00239788 /* Build configuration list for PBXNativeTarget "Smart Expenses Tracker" */;
@@ -171,10 +273,12 @@
 				C9F4F3B72BBF531D00239788 /* Sources */,
 				C9F4F3B82BBF531D00239788 /* Frameworks */,
 				C9F4F3B92BBF531D00239788 /* Resources */,
+				C940957B2BC9E73B001F4E10 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C94095762BC9E73B001F4E10 /* PBXTargetDependency */,
 			);
 			name = "Smart Expenses Tracker";
 			productName = "Smart Expenses Tracker";
@@ -191,6 +295,9 @@
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
+					C94095662BC9E739001F4E10 = {
+						CreatedOnToolsVersion = 15.3;
+					};
 					C9F4F3BA2BBF531D00239788 = {
 						CreatedOnToolsVersion = 15.3;
 					};
@@ -210,11 +317,20 @@
 			projectRoot = "";
 			targets = (
 				C9F4F3BA2BBF531D00239788 /* Smart Expenses Tracker */,
+				C94095662BC9E739001F4E10 /* StateCardViewExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C94095652BC9E739001F4E10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C94095732BC9E73B001F4E10 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C9F4F3B92BBF531D00239788 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -227,6 +343,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C94095632BC9E739001F4E10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C94095812BC9E960001F4E10 /* TintColor.swift in Sources */,
+				C94095862BC9EB0D001F4E10 /* Category.swift in Sources */,
+				C94095892BC9EBA2001F4E10 /* StatsCardViewBundle.swift in Sources */,
+				C94095802BC9E8AC001F4E10 /* Transaction.swift in Sources */,
+				C940957E2BC9E871001F4E10 /* Utils.swift in Sources */,
+				C940957C2BC9E81E001F4E10 /* FilterTransactionsView.swift in Sources */,
+				C940957D2BC9E866001F4E10 /* DateExtension.swift in Sources */,
+				C94095712BC9E739001F4E10 /* StateCardView.swift in Sources */,
+				C940957F2BC9E88C001F4E10 /* CardView.swift in Sources */,
+				C94095822BC9E98F001F4E10 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C9F4F3B72BBF531D00239788 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -239,6 +372,7 @@
 				C94092192BC2837F001F4E10 /* CardView.swift in Sources */,
 				C940921D2BC3E9B9001F4E10 /* SwipeAction.swift in Sources */,
 				C9F4F3C12BBF531D00239788 /* ContentView.swift in Sources */,
+				C94095622BC9E5A3001F4E10 /* ChartModel.swift in Sources */,
 				C94092CD2BC7B6CD001F4E10 /* NewExpenseView.swift in Sources */,
 				C9F4F3D02BBF53C700239788 /* IntroScreen.swift in Sources */,
 				C9A488A32BC0B620002D5980 /* Utils.swift in Sources */,
@@ -249,6 +383,7 @@
 				C94092552BC44ECA001F4E10 /* LockView.swift in Sources */,
 				C9F4F3D32BBF554C00239788 /* Constants.swift in Sources */,
 				C9A4889F2BC0B41B002D5980 /* Graphs.swift in Sources */,
+				C94095602BC9DFFF001F4E10 /* FilterTransactionsView.swift in Sources */,
 				C9A488912BC0AFBA002D5980 /* Category.swift in Sources */,
 				C940921B2BC3E4A1001F4E10 /* TransactionCardView.swift in Sources */,
 			);
@@ -256,7 +391,69 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		C94095762BC9E73B001F4E10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C94095662BC9E739001F4E10 /* StateCardViewExtension */;
+			targetProxy = C94095752BC9E73B001F4E10 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		C94095792BC9E73B001F4E10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StateCardView/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StateCardView;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.khan.HalloDeutsch.Smart-Expenses-Tracker.StateCardView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C940957A2BC9E73B001F4E10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StateCardView/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StateCardView;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.khan.HalloDeutsch.Smart-Expenses-Tracker.StateCardView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		C9F4F3C72BBF531F00239788 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -379,8 +576,10 @@
 		C9F4F3CA2BBF531F00239788 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Smart Expenses Tracker/Smart Expenses Tracker.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Smart Expenses Tracker/Preview Content\"";
@@ -410,8 +609,10 @@
 		C9F4F3CB2BBF531F00239788 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Smart Expenses Tracker/Smart Expenses Tracker.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Smart Expenses Tracker/Preview Content\"";
@@ -441,6 +642,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C94095782BC9E73B001F4E10 /* Build configuration list for PBXNativeTarget "StateCardViewExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C94095792BC9E73B001F4E10 /* Debug */,
+				C940957A2BC9E73B001F4E10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C9F4F3B62BBF531D00239788 /* Build configuration list for PBXProject "Smart Expenses Tracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

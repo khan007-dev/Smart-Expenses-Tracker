@@ -18,6 +18,7 @@ extension  View {
         self.frame(maxHeight: .infinity, alignment: alignment)
     }
     
+    @available(iOSApplicationExtension, unavailable)
     var safeArea: UIEdgeInsets {
         if let windowScene = (UIApplication.shared.connectedScenes.first as? UIWindowScene) {
             return windowScene.keyWindow?.safeAreaInsets ?? .zero
@@ -42,5 +43,11 @@ extension  View {
     var currencySymbol: String {
         let locale = Locale.current
         return locale.currencySymbol ?? ""
+    }
+    
+    func total(_ transactions: [Transaction], category: Category) -> Double {
+        return transactions.filter({ $0.category == category.rawValue }).reduce(Double.zero) { partialResult, transaction in
+            return partialResult + transaction.amount
+        }
     }
 }
