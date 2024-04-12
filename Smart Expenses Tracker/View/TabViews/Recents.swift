@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import SwiftData
 struct Recents: View {
     @AppStorage("userName") private var userName: String = ""
     
@@ -19,6 +19,8 @@ struct Recents: View {
     // Animation
     
     @Namespace private var animation
+    @Query(sort: [SortDescriptor(\Transaction.dateAdded, order: .reverse)], animation: .snappy)
+    private var transactions: [Transaction]
     var body: some View {
         GeometryReader {
             
@@ -46,6 +48,15 @@ struct Recents: View {
                             /// Custom Segmented Control
                             CustomSegmentedControl()
                                 .padding(.bottom,10)
+                            
+                            ForEach(transactions) { transaction in
+                                NavigationLink {
+                                    NewExpenseView(editTransaction: transaction)
+                                } label: {
+                                    TransactionCardView(transaction: transaction)
+                                }
+                               
+                            }
                             
 //                           TransactionCardView(transaction: transaction)
                             

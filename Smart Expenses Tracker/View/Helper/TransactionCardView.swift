@@ -9,7 +9,7 @@ import SwiftUI
 import WidgetKit
 
 struct TransactionCardView: View {
-   // @Environment(\.modelContext) private var context
+    @Environment(\.modelContext) private var context
     var transaction: Transaction
     var showsCategory: Bool = false
     var body: some View {
@@ -20,7 +20,7 @@ struct TransactionCardView: View {
                     .fontWeight(.semibold)
                     .foregroundStyle(.white)
                     .frame(width: 45, height: 45)
-              //      .background(transaction.color.gradient, in: .circle)
+//                  .background(transaction.color.gradient, in: .circle)
                 
                 VStack(alignment: .leading, spacing: 4, content: {
                     Text(transaction.title)
@@ -45,16 +45,16 @@ struct TransactionCardView: View {
                 })
                 .lineLimit(1)
                 .hSpacing(.leading)
-         
-         //       Text(currencyString(transaction.amount, allowedDigits: 2))
-           //         .fontWeight(.semibold)
+//         
+//                Text(currencyString(transaction.amount, allowedDigits: 2))
+//                    .fontWeight(.semibold)
             }
             .padding(.horizontal, 15)
             .padding(.vertical, 10)
             .background(.background, in: .rect(cornerRadius: 10))
         } actions: {
             Action(tint: .red, icon: "trash") {
-          //      context.delete(transaction)
+                context.delete(transaction)
                 WidgetCenter.shared.reloadAllTimelines()
             }
         }

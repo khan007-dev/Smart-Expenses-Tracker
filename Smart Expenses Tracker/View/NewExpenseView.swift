@@ -52,8 +52,8 @@ struct NewExpenseView: View {
                     
                     HStack(spacing: 15) {
                         HStack(spacing: 4) {
-                        //    Text(currencySymbol)
-                         //       .font(.callout.bold())
+                            Text(currencySymbol)
+                                .font(.callout.bold())
                             
                             TextField("0.0", value: $amount, formatter: numberFormatter)
                                 .keyboardType(.decimalPad)
@@ -97,13 +97,14 @@ struct NewExpenseView: View {
                 title = editTransaction.title
                 remarks = editTransaction.remarks
                 dateAdded = editTransaction.dateAdded
-//                if let category = editTransaction.rawCategory {
-//                    self.category = category
-//                }
+                                if let category = editTransaction.rawCategory {
+                                    self.category = category
+                                }
+            
                 amount = editTransaction.amount
-//                if let tint = editTransaction.tint {
-//                    self.tint = tint
-//                }
+                if let tint = editTransaction.tint {
+                    self.tint = tint
+                }
             }
         })
     }
@@ -111,8 +112,18 @@ struct NewExpenseView: View {
     /// Saving Data
      func save() {
      
-            let transaction = Transaction(title: title, remarks: remarks, amount: amount, dateAdded: dateAdded, category: category, tintColor: tint)
-            context.insert(transaction)
+         if editTransaction != nil {
+             
+             editTransaction?.title = title
+             editTransaction?.remarks = remarks
+             editTransaction?.amount = amount
+             editTransaction?.category = category.rawValue
+             editTransaction?.dateAdded = dateAdded
+             
+         } else {
+             let transaction = Transaction(title: title, remarks: remarks, amount: amount, dateAdded: dateAdded, category: category, tintColor: tint)
+             context.insert(transaction)
+         }
         
         
         /// Dismissing View
